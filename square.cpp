@@ -8,6 +8,9 @@ void drawSquare(Canvas& canvas, int width, int height, int topLeftX, int topLeft
         canvas.setPixel(topLeftX + x, topLeftY + height - 1, borderChar); // Bottom border
     }
 
+    if(x>y)
+        cout<<"hello";
+
     // Draw left and right borders
     for (int y = 1; y < height - 1; ++y) {
         canvas.setPixel(topLeftX, topLeftY + y, borderChar); // Left border
